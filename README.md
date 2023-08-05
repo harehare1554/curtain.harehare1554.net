@@ -1,7 +1,7 @@
 <p align="center"><img src="icon-512x512.png" width="150px"></p>
 <h1 align="center">カーテン自動開閉装置コントロールパネル</h1>
 <h2>概要</h2>
-<p>カーテン自動開閉装置は指定した時間にカーテンを自動で開閉することができます。<br>これはそのコントロールパネル(<a href="https://curtain.harehare1554.net/">https://curtain.harehare1554.net/</a>)のソースコードです。<br>開く時間と閉まる時間を設定して登録するとここ(<a href="https://curtain.harehare1554.net/api/time.json">https://curtain.harehare1554.net/api/time.json</a>)に反映されます。<br>それを読み取って自動で開閉しています。<br>コントロールパネルはPWAに対応しているので、インストールしてアプリのように使うことも可能です。</p>
+<p>カーテン自動開閉装置は指定した時間にカーテンを自動で開閉することができます。<br>これはそのコントロールパネル(<a href="https://curtain.harehare1554.net/">https://curtain.harehare1554.net/</a>)のソースコードです。<br>開く時間と閉まる時間を設定して登録するとここ(<a href="https://curtain.harehare1554.net/api/time.json">https://curtain.harehare1554.net/api/time.json</a>)に反映されます。<br>それを読み取って自動で開閉しています。<br>(一部)レスポンシブデザインに対応しています。<br>コントロールパネルはPWAに対応しているので、インストールしてアプリのように使うことも可能です。</p>
 <h2>注意</h2>
 <p>・パスワードが設定されています。パスワードが入手できない場合はアクセスできません。ご了承ください。<br>・アクセス、登録したデータ(時間)はすべて記録されています。(個人情報はなく、アクセス禁止、データの削除をすることができます。)</p>
 <h2>クレジット</h2>
