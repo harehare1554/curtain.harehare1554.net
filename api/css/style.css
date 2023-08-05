@@ -1,12 +1,14 @@
+/*pc*/
 @import url(sanitize.css);
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 
 body {
   background-color: #fafafa;
+  width: 100%;
 }
 .content {
   background-color: #fff;
-  width: 600px;
+  width: 35%;
   height: 200px;
   margin: 10px auto;
   border: 1px solid #d1d1d1;
@@ -40,4 +42,99 @@ svg {
 @keyframes loading {
 	from { transform: none; }
 	to { transform: rotate(360deg); }
+}
+
+/*tablet*/
+@media only screen and (max-width: 1000px) {
+@import url(sanitize.css);
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+body {
+  background-color: #fafafa;
+  width: 100%;
+}
+.content {
+  background-color: #fff;
+  width: 45%;
+  height: 200px;
+  margin: 10px auto;
+  border: 1px solid #d1d1d1;
+  padding: 30px;
+  position: relative
+}
+h1 {
+  color: #000000;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  bottom: 70px;
+  left: 55px;
+}
+svg {
+  fill: none;
+  stroke: dodgerblue;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 230 230;
+  animation: loader 1.4s infinite cubic-bezier(.4,0,.3,1), loading 1.2s infinite linear;
+  position: absolute;
+  bottom: 83px;
+  left: 20px;
+}
+@keyframes loader {
+  from { stroke-dashoffset: 230; }
+  to { stroke-dashoffset: -230; }
+}
+@keyframes loading {
+  from { transform: none; }
+  to { transform: rotate(360deg); }
+}
+}
+
+/*sp*/
+@media only screen and (max-width: 480px) {
+@import url(sanitize.css);
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+body {
+  background-color: #fafafa;
+  width: 100%;
+}
+.content {
+  background-color: #fff;
+  width: 90%;
+  height: 200px;
+  margin: 10px auto;
+  border: 1px solid #d1d1d1;
+  padding: 30px;
+  position: relative
+}
+h1 {
+  color: #000000;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  bottom: 70px;
+  left: 55px;
+}
+svg {
+  fill: none;
+  stroke: dodgerblue;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 230 230;
+  animation: loader 1.4s infinite cubic-bezier(.4,0,.3,1), loading 1.2s infinite linear;
+  vertical-align: middle;
+  position: absolute;
+  bottom: 83px;
+  left: 20px;
+}
+@keyframes loader {
+  from { stroke-dashoffset: 230; }
+  to { stroke-dashoffset: -230; }
+}
+@keyframes loading {
+  from { transform: none; }
+  to { transform: rotate(360deg); }
+}
 }
