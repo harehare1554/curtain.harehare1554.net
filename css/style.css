@@ -13,6 +13,7 @@ body {
   margin: 10px auto;
   border: 1px solid #d1d1d1;
   padding: 30px;
+  position: relative;
 }
 h1 {
   color: #000000;
@@ -30,6 +31,16 @@ input[type="submit"] {
 }
 .sp {
   display: block;
+}
+.SourceCode {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20%;
 }
 
 /*tablet*/
