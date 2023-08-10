@@ -22,10 +22,8 @@
         }
       });
     </script>
-    <script src="//accaii.com/harehare1554/script.js" async></script>
   </head>
   <body>
-    <noscript><img src="//accaii.com/harehare1554/script?guid=on"></noscript>
     <div class="content">
       <h1>カーテン自動開閉装置<br class="sp">コントロールパネル</h1>
       <form action="./api/index.php">
