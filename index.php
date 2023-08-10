@@ -1,3 +1,18 @@
+<?php
+$api_url = "https://curtain.harehare1554.net/api/time.json";
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $api_url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+curl_close($ch);
+
+$data = json_decode($response, true);
+
+$openrr = $data["open"];
+$closerr = $data["close"]
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -22,18 +37,20 @@
         }
       });
     </script>
+    <script src="//accaii.com/harehare1554/script.js" async></script>
   </head>
   <body>
+    <noscript><img src="//accaii.com/harehare1554/script?guid=on"></noscript>
     <div class="content">
       <h1>カーテン自動開閉装置<br class="sp">コントロールパネル</h1>
       <form action="./api/index.php">
         <label>開く時刻を設定</label>
         <br>
-        <input type="time" id="open" name="open">
+        <input type="time" id="open" name="open" value=<?= $openrr ?>>
         <br>
         <label>閉まる時刻を設定</label>
         <br>
-        <input type="time" id="close" name="close">
+        <input type="time" id="close" name="close" value=<?= $closerr ?>>
         <br>
         <input class="input" type="submit" id="submit" name="submit" value="登録">
       </form>
