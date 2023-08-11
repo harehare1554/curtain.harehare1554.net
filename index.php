@@ -2,6 +2,7 @@
 $api_url = "https://curtain.harehare1554.net/api/time.json";
 
 $ch = curl_init();
+
 curl_setopt($ch, CURLOPT_URL, $api_url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
@@ -19,6 +20,9 @@ $closerr = $data["close"]
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
     <link rel="stylesheet" href="css/style.css">
     <link href="../api/index.php">
     <title>カーテン自動開閉装置コントロールパネル</title>
@@ -37,8 +41,10 @@ $closerr = $data["close"]
         }
       });
     </script>
+    <script src="//accaii.com/harehare1554/script.js" async></script>
   </head>
   <body>
+    <noscript><img src="//accaii.com/harehare1554/script?guid=on"></noscript>
     <div class="content">
       <h1>カーテン自動開閉装置<br class="sp">コントロールパネル</h1>
       <form action="./api/index.php">
