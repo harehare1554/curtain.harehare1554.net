@@ -11,7 +11,7 @@ curl_close($ch);
 $data = json_decode($response, true);
 
 $openrr = $data["open"];
-$closerr = $data["close"]
+$closerr = $data["close"];
 ?>
 
 <!DOCTYPE html>
